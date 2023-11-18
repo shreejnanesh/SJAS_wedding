@@ -66,24 +66,7 @@
 					<ul>
 						<li class="active"><a href="index.html">Home</a></li>
 						<li><a href="about.html">Story</a></li>
-						<li class="has-dropdown">
-							<a href="services.html">Services</a>
-							<ul class="dropdown">
-								<li><a href="#">Web Design</a></li>
-								<li><a href="#">eCommerce</a></li>
-								<li><a href="#">Branding</a></li>
-								<li><a href="#">API</a></li>
-							</ul>
-						</li>
-						<li class="has-dropdown">
-							<a href="gallery.html">Gallery</a>
-							<ul class="dropdown">
-								<li><a href="#">HTML5</a></li>
-								<li><a href="#">CSS3</a></li>
-								<li><a href="#">Sass</a></li>
-								<li><a href="#">jQuery</a></li>
-							</ul>
-						</li>
+						<li><a href="gallery.html">Gallery</a></li>
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</div>
@@ -101,8 +84,8 @@
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
 							<h1>Shree Jnanesh &amp; Amritha</h1>
 							<h2>We Are Getting Married</h2>
-							<div class="simply-countdown simply-countdown-one"></div>
-							<p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>
+							<div class="simply-countdown simply-countdown-india"></div>
+							<p><a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=YzRxMzhvOWpjZ3IzZWJiNjZkaWppYjlrY2RpNjhiYjI2NHNqYWI5aTY4cGo2cDlwNjRxNjRjaG82YyBqbmFuZXNobWQxMEBt&tmsrc=jnaneshmd10%40gmail.com" class="btn btn-default btn-sm"  target="_blank">Save the date</a></p>
 						</div>
 					</div>
 				</div>
@@ -115,8 +98,8 @@
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 					<h2>Hello!</h2>
-					<h3>February 04th, 2024 Karnataka, India</h3>
-					<p>We invited you to celebrate our wedding</p>
+					<h3>September 01th, 2023 Karnataka, India</h3>
+					<p>We are inviting you to celebrate our wedding</p>
 				</div>
 			</div>
 			<div class="couple-wrap animate-box">
@@ -623,15 +606,21 @@
         month: d.getMonth() + 1,
         day: d.getDate()
     });
-
-    //jQuery example
-    $('#simply-countdown-india').simplyCountdown({
+	// our usecase
+	simplyCountdown('.simply-countdown-india', {
         year: 2024,
         month: 2,
         day: 4,
-        enableUtc: true
+        enableUtc: false
     });
-</script>
+    //jQuery example
+    $('#simply-countdown-losange').simplyCountdown({
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate(),
+        enableUtc: false
+    });
+	</script>
 
 	</body>
 </html>
