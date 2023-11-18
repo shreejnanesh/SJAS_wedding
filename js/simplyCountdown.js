@@ -154,12 +154,12 @@
             cd = document.querySelectorAll(elt);
 
         targetTmpDate = new Date(
-            parameters.year,
-            parameters.month - 1,
-            parameters.day,
-            parameters.hours,
-            parameters.minutes,
-            parameters.seconds
+            2024,
+            2 - 1,
+            4,
+            9,
+            59,
+            0
         );
 
         if (parameters.enableUtc) {
