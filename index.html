@@ -617,28 +617,40 @@
 	<script src="js/main.js"></script>
 
 	<script>
-    var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
+		document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function(e) {
+				e.preventDefault();
+				
+				const targetSection = document.querySelector(this.getAttribute('href'));
+				
+				// Scroll smoothly to the target section
+				targetSection.scrollIntoView({
+					behavior: 'smooth'
+				});
+			});
+		});
+		var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
 
-    // default example
-    simplyCountdown('.simply-countdown-one', {
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate()
-    });
-	// our usecase
-	simplyCountdown('.simply-countdown-india', {
-        year: 2024,
-        month: 2,
-        day: 4,
-        enableUtc: false
-    });
-    //jQuery example
-    $('#simply-countdown-losange').simplyCountdown({
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate(),
-        enableUtc: false
-    });
+		// default example
+		simplyCountdown('.simply-countdown-one', {
+			year: d.getFullYear(),
+			month: d.getMonth() + 1,
+			day: d.getDate()
+		});
+		// our usecase
+		simplyCountdown('.simply-countdown-india', {
+			year: 2024,
+			month: 2,
+			day: 4,
+			enableUtc: false
+		});
+		//jQuery example
+		$('#simply-countdown-losange').simplyCountdown({
+			year: d.getFullYear(),
+			month: d.getMonth() + 1,
+			day: d.getDate(),
+			enableUtc: false
+		});
 	</script>
 
 	</body>
