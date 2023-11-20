@@ -93,11 +93,11 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 40px 0;
   z-index: 1001;
 }
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .fh5co-nav {
     padding: 20px 0;
   }
-}
+} */
 .fh5co-nav #fh5co-logo {
   font-size: 40px;
   margin: 0;
@@ -109,11 +109,36 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 5px 10px;
   color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+  .fh5co-nav {
+    padding: 20px 0;
+  }
+  .fh5co-nav #fh5co-logo {
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    line-height: 40px;
+    font-family: "Sacramento", Arial, serif;
+  }
+  .fh5co-nav a {
+    padding: 5px 10px;
+    color: #fff;
+  }
+  .fh5co-nav .menu-1, .fh5co-nav .menu-2 {
+    display: block; /* Display the full menu */
+  }
+  /* Hide the dropdown menu items */
+  .fh5co-nav ul li.has-dropdown .dropdown {
+    display: none;
+  }
+}
+/* 
 @media screen and (max-width: 768px) {
   .fh5co-nav .menu-1, .fh5co-nav .menu-2 {
     display: none;
   }
-}
+} */
 .fh5co-nav ul {
   padding: 0;
   margin: 2px 0 0 0;
@@ -1638,11 +1663,11 @@ form label {
   z-index: 2001;
   border-bottom: none !important;
 }
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .fh5co-nav-toggle {
     display: block;
   }
-}
+} */
 
 .btn {
   margin-right: 4px;
