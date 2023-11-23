@@ -52,10 +52,15 @@
 
 	</head>
 	<body>
+	
 		
 	<div class="fh5co-loader"></div>
 	
 	<div id="page">
+		<audio id="myAudio">
+			<source src="D:\SJAS_wedding-main (1)\SJAS_wedding-main\images\bgm.mp3" type="audio/mp3">
+			Your browser does not support the audio element.
+		  </audio>
 	<nav class="fh5co-nav" role="navigation">
 		<div class="container">
 			<div class="row">
@@ -84,16 +89,23 @@
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
 							<!-- <h2>Welcome to the celebration of,</h2> -->
+							
+		
 							<h2>Welcome to the celebration marking the union of,</h2>
 							<h1>Shree Jnanesh <br>&amp;</br> Amritha</h1>
 							<h2>Join us on a beautiful journey as we unite in love, tradition, and celebration.</h2>
 							<div class="simply-countdown simply-countdown-india"></div>
 							<p><a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=YzRxMzhvOWpjZ3IzZWJiNjZkaWppYjlrY2RpNjhiYjI2NHNqYWI5aTY4cGo2cDlwNjRxNjRjaG82YyBqbmFuZXNobWQxMEBt&tmsrc=jnaneshmd10%40gmail.com" class="btn btn-default btn-sm"  target="_blank">Save the date</a></p>
+							
+								
+								</p>
+							
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		
 	</header>
 
 	<div id="fh5co-couple">
@@ -518,13 +530,14 @@
 	</div> -->
 
 
-	<!-- <div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_4.jpg);">
+	<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_4.jpg);">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Contact Us</h2>
-					<p>For any queries or information, feel free to reach out to us at, </p>
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<h2>Join us in joy!!! </h2>
+					<h2>Looking forward to having you with us...</h2>
+					
 
 				</div>
 			</div>
@@ -532,29 +545,12 @@
 				<div class="col-md-10 col-md-offset-1">
 					<form class="form-inline">
 						<div class="col-md-6 col-sm-6 text-center">
-							<div class="form-group"> -->
-								<!-- <label for="name" class="sr-only">Email:</label> -->
-								<!-- <span>contact:</span>
-								<span>********</span> -->
-								<!-- <input type="name" class="form-control" id="name" placeholder="Name"> -->
-							<!-- </div>
-						</div>
-						<div class="col-md-6 col-sm-6 text-center">
-							<div class="form-group">
-								<span>mail:</span>
-								<span>********</span> -->
-								<!-- <label for="email" class="sr-only">Phone Number:</label> -->
-								<!-- <input type="email" class="form-control" id="email" placeholder="Email"> -->
-							<!-- </div>
-						</div> -->
-						<!-- <div class="col-md-4 col-sm-4">
-							<button type="submit" class="btn btn-default btn-block">I am Attending</button>
-						</div> -->
-					<!-- </form>
+							<div class="form-group"> 
+					
 				</div>
 			</div>
 		</div>
-	</div> -->
+	</div>
 
 	<!-- <footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
@@ -609,6 +605,16 @@
 	<script src="js/main.js"></script>
 
 	<script>
+
+document.getElementById('page').addEventListener('click', function (event) {
+      event.preventDefault(); // Prevent the default link behavior
+      var audio = document.getElementById('myAudio');
+      audio.play().catch(function(error) {
+        // Autoplay was prevented, you might want to handle this
+        console.error("Autoplay prevented: ", error);
+      });
+    });
+
 
     var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
 
