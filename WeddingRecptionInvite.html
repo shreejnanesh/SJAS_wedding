@@ -56,6 +56,10 @@
 	<div class="fh5co-loader"></div>
 	
 	<div id="page">
+		<audio id="myAudio">
+			<source src="images\bgm.mp3" type="audio/mp3">
+			Your browser does not support the audio element.
+		  </audio>
 	<nav class="fh5co-nav" role="navigation">
 		<div class="container">
 			<div class="row">
@@ -199,6 +203,19 @@
 		</div>
 	</div>
 	</div>
+	<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_4.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<h2>Join us in joy!!! </h2>
+					<h2>Looking forward to having you with us...</h2>					
+
+				</div>
+			</div>
+			
+		</div>
+	</div>
 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
@@ -229,6 +246,16 @@
 	<script src="js/main.js"></script>
 
 	<script>
+
+		
+document.getElementById('page').addEventListener('click', function (event) {
+      event.preventDefault(); // Prevent the default link behavior
+      var audio = document.getElementById('myAudio');
+      audio.play().catch(function(error) {
+        // Autoplay was prevented, you might want to handle this
+        console.error("Autoplay prevented: ", error);
+      });
+    });
 
     var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
 
