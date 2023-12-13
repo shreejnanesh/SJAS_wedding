@@ -56,10 +56,10 @@
 	<div class="fh5co-loader"></div>
 	
 	<div id="page">
-		<audio id="myAudio">
+		<!-- <audio id="myAudio">
 			<source src="images\bgm.mp3" type="audio/mp3">
 			Your browser does not support the audio element.
-		  </audio>
+		  </audio> -->
 	<nav class="fh5co-nav" role="navigation">
 		<div class="container">
 			<div class="row">
@@ -248,14 +248,14 @@
 	<script>
 
 		
-document.getElementById('page').addEventListener('click', function (event) {
-      event.preventDefault(); // Prevent the default link behavior
-      var audio = document.getElementById('myAudio');
-      audio.play().catch(function(error) {
-        // Autoplay was prevented, you might want to handle this
-        console.error("Autoplay prevented: ", error);
-      });
-    });
+// document.getElementById('page').addEventListener('click', function (event) {
+//       event.preventDefault(); // Prevent the default link behavior
+//       var audio = document.getElementById('myAudio');
+//       audio.play().catch(function(error) {
+//         // Autoplay was prevented, you might want to handle this
+//         console.error("Autoplay prevented: ", error);
+//       });
+//     });
 
     var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
 
