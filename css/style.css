@@ -1210,6 +1210,14 @@ form label {
   color: #F14E95;
   font-family: "Sacramento", Arial, serif;
 }
+.fh5co-heading h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-weight: bold;
+  color: #f1a84e;
+  font-family: "Monotype Corsiva", Arial, serif;
+}
 @media screen and (max-width: 768px) {
   .fh5co-heading h2 {
     font-size: 40px;
